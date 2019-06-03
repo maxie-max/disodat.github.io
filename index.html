@@ -21,6 +21,9 @@
 			align-items: center;
 			justify-content: space-around;
 		}
+		figure div {
+			position: relative;
+		}
 		figure img {
 			height: 200px;
 			display: block;
@@ -31,6 +34,24 @@
 		#mc_embed_signup .button{
 			margin: 0 auto;
 			display: block;
+		}
+		.vote {
+			    position: absolute;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+    left: 50%;
+    background: #fff;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4px;
+        box-shadow: 1px 3px #aaaaaa;
+
+		}
+		.vote img {
+			width: 24px;
+			height: 24px;
 		}
 	</style>
 </head>
@@ -43,8 +64,20 @@
 		</figure> -->
 
 		<figure>
-			<img src="coke.jpg" />
-			<img src="pepsi.jpg" />
+			<div>
+				<img src="coke.jpg" />
+				<div class="vote">
+					<span>11</span>
+					<img src="thumb-down.png">
+				</div>
+			</div>
+			<div>
+				<img src="pepsi.jpg" />
+				<div class="vote">
+					<span>34</span>
+					<img src="thumb-down.png">
+				</div>
+			</div>
 		</figure>
 		
  
